@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6d8lov2c0t1p"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_yvndm"]
+[ext_resource type="Texture2D" uid="uid://guchat24sswy" path="res://sprites/ladybugspaceship.png" id="2_02dbo"]
+[ext_resource type="AudioStream" uid="uid://cq48bgr6ge67n" path="res://sounds/plop.wav" id="3_qm8f2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1tf2b"]
+radius = 40.025
+
+[node name="evan" type="CharacterBody2D"]
+script = ExtResource("1_yvndm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.125, -0.500003)
+rotation = 1.5708
+scale = Vector2(0.146484, 0.152832)
+texture = ExtResource("2_02dbo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1tf2b")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qm8f2")
