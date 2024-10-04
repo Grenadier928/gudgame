@@ -21,8 +21,10 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	#print("B")
-	if body.name == str("Enemy"):
-		print(body)
+	print(body)
+	#if body.name == str("Enemy"):
+	if body.is_in_group("enemies"):
+		
 		body._on_die()
 		#connect("die", body._on_die)
 		#body.emit_signal('die', 0)

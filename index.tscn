@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://bc3xnebjr1lnt"]
+[gd_scene load_steps=6 format=3 uid="uid://bc3xnebjr1lnt"]
 
+[ext_resource type="Script" path="res://index.gd" id="1_47vow"]
 [ext_resource type="PackedScene" uid="uid://c6d8lov2c0t1p" path="res://scenes/player.tscn" id="1_jaeq0"]
 [ext_resource type="Texture2D" uid="uid://b2vjku3p546b8" path="res://sprites/beam.png" id="2_8i2k2"]
 [ext_resource type="TileSet" uid="uid://bb7y8lkpx6mad" path="res://tilesets/index.tres" id="2_73yhe"]
 [ext_resource type="PackedScene" uid="uid://b8gbcsi8wo6ya" path="res://scenes/enemy.tscn" id="4_2wblv"]
 
 [node name="Index" type="Node2D"]
+script = ExtResource("1_47vow")
 
 [node name="TileMap" type="TileMap" parent="."]
 rotation = -0.00117678
